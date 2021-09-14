@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <a  href="#home"><button class="to-top"><i class="fa fa-arrow-circle-up fa-1x" aria-hidden="true"></i></button></a>
+    <section id="home">
+        <div id="logo">
+            <h2>Tejas Jadhav</h2>
+            <span>Web-Developer | Data-Analyst | Musician</span>
+        </div>
+
+        <div id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </div>
+    </section>
+
+    <section id="about" style="padding-top: 30px;">
+        <h2>About Me</h2>
+        <div id="aboutimg">
+            <div class="aboutleft fade">
+                <img src="images/1.JPG" active width="375px" height="500px" alt="1">
+            </div>
+            <div class="aboutleft fade">
+                <img src="images/2.JPG" width="375px" height="500px" alt="2">
+            </div>
+            <div class="aboutleft fade">
+                <img src="images/3.JPG" width="375px" height="500px" alt="3">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a><br>
+
+            <div id="dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div id="aboutright">
+            <div>
+                <h3></h3>
+                <p>I'm Tejas, a junior year student who's passionate about Data Science, Web Design and Music. I'm a keen learner, a polyglot, and someone who takes immense interest in computing technology. Currently, I'm pursuing my CS Engineering (hons in Data Science) at Pimpri Chinchwad College of Engineering, Pune. I've completeled the Web Design Specialization from Coursera, and I strive to write clean and elegant code plus build all my websites from scratch.  </p>
+            </div>
+            
+            <div>
+                <h3>Technical Background</h3>
+                <p>While Data Analytics and Web Design top my skillset, I've undergone training at Bolt IOT Bangalore, to build voice based apps. I've built a total of 3 apps which include a voice based Jokes app, a music player app built using the Napster API, and the Weather app. As of now, I'm pursuing a training program at Stige LTD, an IIT Kharagpur startup, regarding Data Analytics. Apart from my main stream, I've completed specialization courses regarding Music Production / Sound Engineering and I can efficiently work with Digital Audio Workstatios.</p>
+            </div>
+        </div>
+        <div id="social">
+          
+          <a href="https://www.linkedin.com/in/tejas-jadhav-23a765191">
+            <i class="fa fa-linkedin fa-2x" ></i>
+          </a>
+          <a href="https://www.instagram.com/_dudeperfect____/">
+            <i class="fa fa-instagram fa-2x" ></i>
+          </a>
+          <a href="https://github.com/TejasNitinJadhav">
+            <i class="fa fa-github fa-2x" ></i>
+          </a>
+          <a href=" https://twitter.com/haveyoumettejas?s=08">
+            <i class="fa fa-twitter fa-2x" ></i>
+          </a>
+        </div>
+    </section>
+
+    <section id="certificate" style="background-color: antiquewhite;">
+        <h3 style="padding-top:40px ;">Certificates</h3>
+        <div class="row">
+            <div class="column">
+              <img src="images/Certificates/0001.jpeg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/Certificates/ds.jpeg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/Certificates/1.png" alt="Mountains" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <img src="images/Certificates/2.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/Certificates/mp.jpeg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/Certificates/py.jpeg" alt="Mountains" style="width:100%">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="project">
+        <h2>My Projects</h2>
+        <div class="project-card">
+                <video src="videos/Jokes App.mp4"  type="video/mp4" controls></video>
+                <p>The above is a Jokes app built using Voiceflow, Integromat and Jokes API. The technology used here is Google assistant.</p>
+                </p>
+        </div>
+        <div class="project-card">
+                <video src="videos/Music Player App.mp4"  type="video/mp4" controls></video>
+                <p>The above is a Music player app built using Voiceflow and Integromat. The Napster API is used to retrieve top artists of the week, and the information is stored and modified using Javascript code inside Voiceflow. Finally, the top songs of these artists are retrieved and upon voice input, Google Assistant plays the specified song sample.</p>
+                </p>
+        </div>
+        <div class="project-card">
+                <video src="videos/Weather App.mp4"  type="video/mp4" controls></video>
+                <p>The above is a weather app built using Voiceflow and Integromat. A voice input consisting of a city name is fed in, and the weather of that particular city is obtained.</p>
+                </p>
+        </div>
+    </section>
+
+    <section id="music" style="background-color: antiquewhite;">
+      <h2>Music</h2>
+      <div class="music-card">
+          <video src="videos/Yee paal.mp4" type="video/mp4" controls></video>
+          <p>Yeh Pal<br>The song is all about that bittersweet feeling of love. Prateek Kuhaad brings out the best of us  </p>
+      </div>
+
+      <div class="music-card">
+          <video src="videos/With You For You.m4v" type="video/mp4" controls></video>
+          <p>With you / for you<br>Love and heartbreak at it's purest, another Prateek Kuhaad masterpiece to listen to on loop  </p>
+      </div>
+
+      <div class="music-card">
+          <video src="videos/TuJoMila.mp4" type="video/mp4" controls></video>
+          <p>Tu jo mila<br>Had the opportunity to sing this for my teachers on Teacher's Day. Hope you enjoy it !</p>
+      </div>
+  </section>
+
+    <section id="contact">
+        <div style="text-align:center">
+          <h2>Contact Me</h2>
+          <p>Hit me up for coffee, or feel free to contact your queries</p>
+        </div>
+        <div class="rows">
+          
+          <div class="columns">
+            <form >
+              <label for="fname">Name</label>
+              <input type="text" id="name" placeholder="Your name">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Your email">
+              
+              <label id="subject" for="subject">Subject</label>
+              <textarea name="" id="writesomething" cols="30" rows="10">Write something</textarea>
+              <button class="submit" type="submit" >Submit</button>
+            </form>
+          </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
